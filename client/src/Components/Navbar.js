@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { NavLink } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -21,13 +22,16 @@ class Navbar extends Component {
         <AppBar position="static" color={isDarkMode ? 'default' : 'primary'}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit">
-              <span>📚</span>
+              <span role="img" aria-label="books">
+                📚
+              </span>
             </IconButton>
             <Typography className={classes.title} variant="h6" color="inherit">
               Books Plus
             </Typography>
             <Switch onChange={toggleTheme} />
             <div className={classes.grow} />
+            {/* <NavLink>Saved</NavLink> */}
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
