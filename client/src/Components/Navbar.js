@@ -21,10 +21,10 @@ class Navbar extends Component {
         <AppBar position="static" color={isDarkMode ? 'default' : 'primary'}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit">
-              <span>F</span>
+              <span>📚</span>
             </IconButton>
             <Typography className={classes.title} variant="h6" color="inherit">
-              Locale
+              Books Plus
             </Typography>
             <Switch onChange={toggleTheme} />
             <div className={classes.grow} />
