@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "booksplus",
   "version": "0.1.0",
-  "description": "Mern Demo",
+  "description": "A place to search and store your books",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {

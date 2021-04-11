@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -31,7 +31,7 @@ class Navbar extends Component {
             </Typography>
             <Switch onChange={toggleTheme} />
             <div className={classes.grow} />
-            {/* <NavLink>Saved</NavLink> */}
+            <a>Saved</a>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
