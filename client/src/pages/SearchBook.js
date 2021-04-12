@@ -61,7 +61,6 @@ class SearchBook extends Component {
       })
         .then((res) => console.log(res.title + ' was added to your favorites'))
         .catch((err) => console.log(err));
-      // console.log(this.state.books[0].title)
     }
   };
 
