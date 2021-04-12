@@ -31,7 +31,7 @@ class SavedBooks extends Component {
 
   render() {
     return (
-      <Container style={{ marginTop: 290 }}>
+      <Container>
         <Table>
           <TableHead>
             <TableRow>

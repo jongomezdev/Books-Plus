@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
-import {
-  Container,
-  Table,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from '@material-ui/core';
+import { Container, Table, TableBody, TableRow } from '@material-ui/core';
 import SearchBar from '../Components/SearchBar';
 import { Image, BookDetails, SaveFavorites } from '../Components/SearchResults';
 
@@ -86,11 +79,6 @@ class SearchBook extends Component {
         </Container>
         <Container>
           <Table>
-            {/* <TableHead>
-              <TableRow>
-                <TableCell>Hello</TableCell>
-              </TableRow>
-            </TableHead> */}
             <TableBody>
               {this.state.books.map((book, i) => (
                 <TableRow key={i}>
