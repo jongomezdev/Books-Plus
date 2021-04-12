@@ -10,7 +10,7 @@ function SearchBar(props) {
   const { classes } = props;
   return (
     <>
-      <Toolbar style={{ backGround: 'purple' }}>
+      <Toolbar>
         <div className={classes.search}>
           <div className={classes.searchIcon}>
             <SearchIcon />

@@ -12,6 +12,7 @@ function App() {
       <PageContent>
         <BrowserRouter>
           <Navbar />
+
           <Switch>
             <Route path="/" component={SearchBook} exact />
             <Route path="/saved" component={SavedBook} exact />

@@ -32,15 +32,11 @@ function Navbar(props) {
           </Typography>
           <Switch onChange={toggleTheme} />
           <div className={classes.grow} />
-          <NavLink
-            to="/saved"
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '1.5rem',
-            }}
-          >
+          <NavLink className={classes.link} to="/saved">
             Saved
+          </NavLink>
+          <NavLink className={classes.link} to="/">
+            Search
           </NavLink>
           {/* <div className={classes.search}>
             <div className={classes.searchIcon}>

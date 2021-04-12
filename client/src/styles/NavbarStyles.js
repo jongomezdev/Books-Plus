@@ -7,6 +7,12 @@ const styles = (theme) => ({
   grow: {
     flexGrow: 1,
   },
+  link: {
+    paddingRight: 20,
+    color: '#fff',
+    textDecoration: 'none',
+    fontSize: '1.5rem',
+  },
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
