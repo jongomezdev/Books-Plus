@@ -9,7 +9,7 @@ const styles = (theme) => ({
   },
   link: {
     paddingRight: 20,
-    color: '#fff',
+    color: '#d44000',
     textDecoration: 'none',
     fontSize: '1.5rem',
   },
