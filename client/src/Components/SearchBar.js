@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input, Button, AppBar } from '@material-ui/core';
 
-function SearchBar(props) {
+export default function SearchBar(props) {
   return (
     <>
       <AppBar>

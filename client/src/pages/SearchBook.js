@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
+import {
+  Container,
+  Table,
+  TableBody,
+  TableHead,
+  TableRow,
+  TableCell,
+} from '@material-ui/core';
+import SearchBar from '../components/SearchBar';
 
 class SearchBook extends Component {
   constructor(props) {
@@ -65,7 +74,41 @@ class SearchBook extends Component {
   };
 
   render() {
-    return <div></div>;
+    return (
+      <>
+        <Container>
+          <SearchBar
+            handleFormSubmit={this.handleFormSubmit}
+            handleInputChange={this.handleInputChange}
+            search={this.state.search}
+          />
+        </Container>
+        <Container>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Hello</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {this.state.books.map((book, i) => (
+                <TableRow key={i}>
+                  <Image image={book.image} />
+                  <BookDetails
+                    title={book.title}
+                    description={book.description}
+                    link={book.link}
+                  />
+                  <SaveFavorites
+                    handleSaveBtn={this.handleSaveBtn.bind(this)}
+                  />
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </Container>
+      </>
+    );
   }
 }
 
