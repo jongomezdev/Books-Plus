@@ -23,9 +23,11 @@
 //   );
 // }
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
+// import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
+import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from '../styles/NavbarStyles';
 
@@ -33,7 +35,8 @@ function SearchBar(props) {
   const { classes } = props;
   return (
     <>
-      <AppBar>
+      {/* <AppBar> */}
+      <Toolbar style={{ backGround: 'purple' }}>
         <div className={classes.search}>
           <div className={classes.searchIcon}>
             <SearchIcon />
@@ -41,7 +44,7 @@ function SearchBar(props) {
           <InputBase
             value={props.search}
             onChange={props.handleInputChange}
-            placeholder="Here's to books..."
+            placeholder="Your adventure..."
             classes={{
               root: classes.inputRoot,
               input: classes.inputInput,
@@ -49,10 +52,11 @@ function SearchBar(props) {
             id="book"
           />
         </div>
-        <button type="submit" onClick={props.handleFormSubmit}>
+        <Button type="submit" onClick={props.handleFormSubmit}>
           Search
-        </button>
-      </AppBar>
+        </Button>
+      </Toolbar>
+      {/* </AppBar> */}
     </>
   );
 }

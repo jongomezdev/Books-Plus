@@ -8,7 +8,7 @@ import {
   TableRow,
   TableCell,
 } from '@material-ui/core';
-import Navbar from '../Components/Navbar';
+import SearchBar from '../Components/SearchBar';
 import { Image, BookDetails, SaveFavorites } from '../Components/SearchResults';
 
 class SearchBook extends Component {
@@ -78,7 +78,7 @@ class SearchBook extends Component {
     return (
       <>
         <Container>
-          <Navbar
+          <SearchBar
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
             search={this.state.search}
@@ -86,11 +86,11 @@ class SearchBook extends Component {
         </Container>
         <Container>
           <Table>
-            <TableHead>
+            {/* <TableHead>
               <TableRow>
                 <TableCell>Hello</TableCell>
               </TableRow>
-            </TableHead>
+            </TableHead> */}
             <TableBody>
               {this.state.books.map((book, i) => (
                 <TableRow key={i}>

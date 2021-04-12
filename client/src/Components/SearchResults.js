@@ -22,7 +22,7 @@ export function BookDetails(props) {
 export function SaveFavorites(props) {
   return (
     <TableCell>
-      <Button onClick={props.handleSaveBtn}>Add to Favorites</Button>
+      <Button onClick={props.handleSaveBtn}>Save this book!</Button>
     </TableCell>
   );
 }
