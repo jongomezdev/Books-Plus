@@ -21,18 +21,30 @@ router.get('/api/search/:terms', async (req, res) => {
 });
 
 router.get('/api/books', async (req, res) => {
-  const bar = foo;
-  return bar;
+  try {
+    const books = await Book.find({});
+    res.json(books);
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
 
 router.post('/api/books', async (req, res) => {
-  const bar = foo;
-  return bar;
+  try {
+    const book = await Book.create(req.bdy);
+    res.status(201).json(book);
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
 
 router.delete('/api/books/:id', async (req, res) => {
-  const bar = foo;
-  return bar;
+  try {
+    const book = await Book.findByIdAndDelete(req.params.id);
+    res.json(book);
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
 // An example of search for Daniel Keyes "FLowers for Algernon"
 // https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=yourAPIKey
