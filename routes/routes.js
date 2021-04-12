@@ -1,8 +1,11 @@
 const express = require('express');
+const path = require('path');
 const axios = require('axios');
 const router = express.Router();
-const Book = require('../models/Book');
+const Book = require('../models/book');
 import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
 
 router.get('/api/search/:terms', async (req, res) => {
   try {
