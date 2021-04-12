@@ -28,6 +28,7 @@ function Navbar(props) {
           <Switch onChange={toggleTheme} />
           <div className={classes.grow} />
           <NavLink to="/saved">Saved</NavLink>
+          <NavLink to="/">Search</NavLink>
         </Toolbar>
       </AppBar>
     </div>
