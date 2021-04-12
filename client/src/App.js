@@ -8,18 +8,17 @@ import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   return (
-    <ThemeProvider>
-      <PageContent>
-        <BrowserRouter>
-          <Navbar />
-
-          <Switch>
+    <BrowserRouter>
+      <ThemeProvider>
+        <Navbar />
+        <Switch>
+          <PageContent>
             <Route path="/" component={SearchBook} exact />
             <Route path="/saved" component={SavedBook} exact />
-          </Switch>
-        </BrowserRouter>
-      </PageContent>
-    </ThemeProvider>
+          </PageContent>
+        </Switch>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
