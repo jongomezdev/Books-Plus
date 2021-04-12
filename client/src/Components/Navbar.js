@@ -20,9 +20,11 @@ function Navbar(props) {
       <AppBar position="static" color={isDarkMode ? 'default' : 'primary'}>
         <Toolbar>
           <IconButton className={classes.menuButton} color="inherit">
-            <span role="img" aria-label="books">
-              📚
-            </span>
+            <NavLink to="/">
+              <span role="img" aria-label="books">
+                📚
+              </span>
+            </NavLink>
           </IconButton>
           <Typography className={classes.title} variant="h6" color="inherit">
             Books Plus

@@ -8,7 +8,6 @@ import {
   TableRow,
   TableCell,
 } from '@material-ui/core';
-import SearchBar from '../Components/SearchBar';
 import Navbar from '../Components/Navbar';
 import { Image, BookDetails, SaveFavorites } from '../Components/SearchResults';
 

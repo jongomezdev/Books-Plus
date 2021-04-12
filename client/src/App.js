@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import Saved from './Components/Saved';
 import SearchBook from './pages/SearchBook';
+import SavedBook from './pages/SavedBook';
 import PageContent from './Components/PageContent';
 import { ThemeProvider } from './contexts/ThemeContext';
 
@@ -14,7 +14,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route path="/" component={SearchBook} exact />
-            <Route path="/saved" component={Saved} exact />
+            <Route path="/saved" component={SavedBook} exact />
           </Switch>
         </BrowserRouter>
       </PageContent>
