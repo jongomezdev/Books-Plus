@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
+// import Button from '@material-ui/core';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-
+import InputBase from '@material-ui/core/InputBase';
+import SearchIcon from '@material-ui/icons/Search';
 import Switch from '@material-ui/core/Switch';
 import { withStyles } from '@material-ui/core/styles';
 import styles from '../styles/NavbarStyles';
@@ -28,7 +30,24 @@ function Navbar(props) {
           <Switch onChange={toggleTheme} />
           <div className={classes.grow} />
           <NavLink to="/saved">Saved</NavLink>
-          <NavLink to="/">Search</NavLink>
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon />
+            </div>
+            <InputBase
+              value={props.search}
+              onChange={props.handleInputChange}
+              placeholder="Here's to books..."
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput,
+              }}
+              id="book"
+            />
+          </div>
+          <button type="submit" onClick={props.handleFormSubmit}>
+            Search
+          </button>
         </Toolbar>
       </AppBar>
     </div>
