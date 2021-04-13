@@ -1,7 +1,7 @@
 {
   "name": "booksplus",
   "version": "1.0.0",
-  "description": "A place to search and store your books",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
