@@ -1,29 +1,79 @@
-# Create React Express App
+### Books Plus Saved Page
 
-## About This Boilerplate
+![Screenshot](client/src/assets/booksplussaved.png)
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+### Books Plus Search Page
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+![Screenshot](client/src/assets/booksplussearch.png)
 
-## Starting the app locally
+# Books Plus
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+Search for books using Google Books. Users can search for books on the 'Search' page, and for each search result, information on the corresponding book is displayed along with the option to view the book on the Google Books website or `save` the book to view later on the 'Saved' page.
 
-```
-npm install
-```
+## Table of Contents
 
-This should install node modules within the server and the client folder.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Links](#Links)
+- [Technologies](#Technologies)
+- [License](#License)
 
-After both installations complete, run the following command in your terminal:
+## Installation
 
-```
-npm start
-```
+1. Download or clone repository
+2. `npm install` to install the required npm packages to run
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+## Usage
 
-## Deployment (Heroku)
+- Application will be invoked by using the following command:
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+  `npm start`
+
+- Open your browser and go to
+
+  `http://localhost:3000`
+
+- Home page displays the search bar
+- Saved page will show your saved books
+- Toggle theme for an "easier on the eyes" theme
+
+## Links
+
+- [Github](https://github.com/jongomezdev/Books-Plus)
+- [Deployed App](https://google-books-plus.herokuapp.com/)
+
+## Technologies
+
+- React
+- React Hooks
+- React Context
+- Express
+- MongoDb
+- Mongoose
+- Material UI
+- JavaScript
+
+## License
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>
+
+## Contributing
+
+Fork and feel free to create PR's on any changes made.
+
+## Questions
+
+Check out my other repositories in the link below:
+
+- [GitHub Profile](https://github.com/jongomezdev)
+
+- For any additional questions, please [email](mailto:jongomezdev@gmail.com) me.
